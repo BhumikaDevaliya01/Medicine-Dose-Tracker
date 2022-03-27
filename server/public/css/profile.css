@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.background {
+  
+  background-image: url("/images/reminder.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+.title{
+  margin-top: 5px;
+  text-align: center;
+  z-index: 1;
+}
+.container {
+  z-index: 1;
+  margin: auto;
+  padding: 10px;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}

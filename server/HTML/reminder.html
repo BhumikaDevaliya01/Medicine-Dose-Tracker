@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Reminder</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <style>
+          body{
+      background-color: #F9F8EB;
+    }
+.container{
+  margin: auto; 
+      padding: 10px; 
+      justify-content:center;
+       width: 50%; 
+       height:50%; 
+       text-align:center;
+}
+.card-info{
+      margin: 5px auto; 
+      padding: 10px; 
+      justify-content:center;
+       width: 70%; 
+       height:70%; 
+       text-align:center;
+       border-radius:20px;
+}
+    </style>
+  </head>
+  <body id="Body">
+    <div class="container">
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button style="text-decoration: none;" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Add Reminder ⏰
+            </button>
+          </h2>
+        </div>
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <form action="/profile/reminder" method="post">
+              <div class="time">
+                <label for="">Time</label>
+                <input type="time" name="time" id="time" required/>
+              </div>
+              <div class="date">
+                <label for="">Date</label>
+                <input type="date" name="date" id="date" required/>
+              </div>
+              <div class="madicine_name">
+                <label for="">Medicine Name</label>
+                <input type="text" name="madicine_name" id="madicine_name" required/>
+              </div>
+              <div class="madicine_shape" id="madicine_shape">
+                <label for="">Medicine Shape</label>
+                <input type="radio" name="shape" value="Circle" required>Circle</input>
+                <input type="radio" name="shape" value="Capsual" required>Capsual</input>
+                <input type="radio" name="shape" value="Ovel" required>Ovel</input>
+                <input type="radio" name="shape" value="Syrup" required>Syrup</input>
+              </div>
+              <div class="amount_of_medicine">
+                <label for="">Amount of Medicine</label>
+                <input type="number" name="amount_of_medicine" id="amount_of_medicine" min="0" required/>
+              </div>
+              <button id="submitButton" class="btn btn-primary" type="submit" onClick="ButtonClick()">Add Reminder</button>
+            </form>        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

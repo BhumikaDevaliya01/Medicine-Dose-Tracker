@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="section">
+      <form action="/signin" method="post">
+        <div class="container">
+          <div class="row full-height justify-content-center">
+            <div class="col-12 text-center align-self-center py-5">
+              <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                <h6 class="mb-0 pb-3"></h6>
+                <label for="reg-log"></label>
+                <div class="card-3d-wrap mx-auto">
+                  <div class="card-3d-wrapper">
+                    <div class="card-front">
+                      <div class="center-wrap">
+                        <div class="section text-center">
+                          <h4 class="mb-4 pb-3" style="color: #1A132F">Sign In</h4>
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              name="email"
+                              class="form-style"
+                              placeholder="Your Email"
+                              id="logemail"
+                              autocomplete="off"
+                              required
+                            />
+                            <i class="input-icon uil uil-at"></i>
+                          </div>
+                          <div class="form-group mt-2">
+                            <input
+                              type="password"
+                              name="password"
+                              class="form-style"
+                              placeholder="Your Password"
+                              id="logpass"
+                              autocomplete="off"
+                              required
+                            />
+                            <i class="input-icon uil uil-lock-alt"></i>
+                          </div>
+
+                          <button class="btn mt-4" onClick="submit()">Submit</button>
+                          <input
+                          type="button"
+                          class="btn mt-4"
+                          value="Sign Up"
+                          onClick="OnClick()"
+                        /> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      function submit(e) {
+        localStorage.setItem("a", "b");
+          console.log("Submit click");
+      }
+      function OnClick(e) {
+        window.location.href = "/signup";
+      }
+    </script>
+  </body>
+</html>

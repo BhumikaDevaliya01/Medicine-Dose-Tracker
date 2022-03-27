@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+      background-color:antiquewhite ;
+  }
+  .big-heading {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+  
+  .content-header {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  
+  .content {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    border: 2px solid rgba(251, 251, 251, 0.055);
+    border-radius: 10px;
+    padding: 3%;
+    line-height: 2;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    margin-top: 2%;
+  }
+  
+  p ul li {
+    font-size: 1.2rem;
+  }
